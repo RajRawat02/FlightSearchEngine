@@ -1,0 +1,17 @@
+.data{
+  float: right;
+}
+.bor{
+    border-width:1px;  
+    border-style:solid;
+}
+.bord{
+  border-width:1px;  
+  border-style:solid;
+}
+.middle {
+  border-style: groove;
+  width: 98%;
+  float: right;
+  height: 100%;
+}

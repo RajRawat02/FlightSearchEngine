@@ -1,0 +1,50 @@
+.top {
+    border-style: groove;
+    height: 50px;
+  }
+  .marginTop {
+    margin-top: 7px;
+  }
+  .top-middle {
+    border-style: groove;
+    height: 50px;
+    width: 78%;
+    float: right;
+  }
+  .left {
+    border-style: groove;
+    width: 21%;
+    float: left;
+    height: 100%;
+  }
+  .middle {
+    border-style: groove;
+    width: 78%;
+    float: right;
+    height: 100%;
+  }
+  .middled {
+    border-style: groove;
+    width: 100%;
+    float: left;
+    height: 100%;
+  }
+  
+  .firstInput {
+    margin-top: 10px;
+  }
+  .lastInput {
+    margin-bottom: 10px;
+  }
+  .display {
+    border-style: groove;
+    margin: 5px;
+    height: Auto;
+  }
+  .flights {
+    border-style: groove;
+    margin: 7px;
+    width: 98%;
+    float: right;
+  }
+  

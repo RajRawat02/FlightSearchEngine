@@ -1,0 +1,12 @@
+<br><br>
+<input type="text" #ocity placeholder="Enter Origin City">
+<br><br>
+<input type="text" #dcity placeholder="Enter Destination City">
+<br><br>
+<input style="width: -webkit-fill-available;margin-right: 110px;" placeholder="Departure date" #ddate class="textbox-n" type="text" onfocus="(this.type='date')"  id="date"> 
+<br><br>
+<input type="number" #passenger placeholder="Passengers">
+<br><br>
+<button style="text-align: center;" (click)="searchfunc(ocity.value,dcity.value,ddate.value,passenger.value)">Search</button>
+
+

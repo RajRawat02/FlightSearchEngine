@@ -1,0 +1,70 @@
+  <!-- <div *ngIf="Price" class="alert alert-success">{{Price}}</div> -->
+
+<div *ngIf="!rdate && ddate">
+  <div class="bord">
+    <br><br>
+    <b>{{dcity}} > {{ocity}}</b>
+    <div class="data">Depart: {{ddate| date :'dd MMM yyyy'}}</div>
+  </div>
+  <br>
+  <div class="bor">
+
+    <div *ngFor="let f of flights" class="flights">
+      <div class="middle">
+        <div style="float:left;width:60%;margin-top:10px;">
+          <div style="font-size: 25px"><b>{{f.price | currency: 'INR':true}}</b></div>
+          <div style="float:left;width:30%">
+            <div>{{f.arriveFlight}}</div>
+            <div>{{f.destination}}>{{f.Origin}}</div>
+            <div>Depart:{{f.arrDepartTime}}</div>
+            <div>Arrive:{{f.arrArriveTime}}</div>
+          </div>
+        </div>
+
+        <div style="float:right;width:30%">
+          <div style="border:groove;width:200px;
+                         height:100px;"> </div>
+          <input class="marginTop" type="button" value="Book This Flight" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="rdate">
+  <div class="bord">
+    <table>
+    <tr style="float:left;"><b>{{dcity}} > {{ocity}} > {{dcity}}</b></tr>
+    <tr style="text-indent: 900px;">
+    <div class="data">Depart: {{ddate| date :'dd MMM yyyy'}}</div></tr>
+    <tr><div class="data">Return: {{rdate| date :'dd MMM yyyy'}}</div></tr>
+  </table>
+  </div>
+  <br>
+    <div *ngFor="let f of flights">
+    <div class="middle">
+      <div style="float:left;width:60%;margin-top:10px;">
+        <div style="font-size: 25px"><b>{{f.price | currency: 'INR':true}}</b></div>
+        <div style="float:left;width:30%">
+          <div>{{ f.arriveFlight }}</div>
+          <div>{{ f.destination }}>{{ f.Origin }}</div>
+          <div>Depart:{{ f.arrDepartTime }}</div>
+          <div>Arrive:{{ f.arrArriveTime }}</div>
+        </div>
+        <div style="float:right;width:30%">
+          <div>{{ f.departFlight }}</div>
+          <div>{{ f.Origin }}>{{ f.destination }}</div>
+          <div>Depart:{{ f.deptDepartTime }}</div>
+          <div>Arrive:{{ f.deptArriveTime }}</div>
+        </div>
+        <div>
+        </div>
+      </div>
+
+      <div style="float:right;width:30%">
+        <div style="border:groove;width:200px;
+                 height:100px;"> </div>
+        <input class="marginTop" type="button" value="Book This Flight" />
+      </div>
+    </div>
+  </div>
+  </div>

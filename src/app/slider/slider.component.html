@@ -1,0 +1,9 @@
+
+<div  class="slider" style="padding: 20px;width: 70%">
+Refine flight search<br><br>
+  <input 
+  type="range"
+  min="0"
+  [attr.max]="max"
+  [(ngModel)]="flightPrice" #slider (input)="valuechange(slider)"/>
+</div>
